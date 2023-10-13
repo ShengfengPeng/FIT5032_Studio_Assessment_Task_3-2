@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<main aria-labelledby="title">
+    <h2 id="title">@ViewBag.Title.</h2>
+    <h3>@ViewBag.Message</h3>
+
+    <p>Use this area to provide additional information.</p>
+
+    <picture>
+        <source media="(max-width:639px)" srcset="~/Content/Images/monash-320.jpg" />
+        <source media="(max-width:1279px)" srcset="~/Content/Images/monash-640.jpg" />
+        <source media="(max-width:2560px)" srcset="~/Content/Images/monash-1280.jpg" />
+
+        <img src="~/App_Data/Content/monash-320.jpg"
+             alt="Different resolution" />
+
+    </picture>
+</main>
